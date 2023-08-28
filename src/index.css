@@ -1,3 +1,11 @@
+/* #ffa94d 
+FORM: #fff4e6
+INPUT, TEXTAREA, BUTTON: #ffe8cc
+FOCUS: #ffa94d
+LIST ITEM: #ffe8cc
+LIST ITEM HOVER: #fff4e6
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -6,4 +14,97 @@
 
 html {
   font-size: 62.5%;
+}
+
+body {
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+
+  color: #222;
+  line-height: 1.25;
+  background: #fff;
+  font-size: 1.6rem;
+}
+
+#root {
+  display: flex;
+  justify-content: center;
+}
+
+.app {
+  width: 80%;
+  margin-top: 3.2rem;
+}
+
+.header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__posts {
+  display: flex;
+  gap: 2rem;
+  align-items: center;
+}
+
+.header__posts span {
+  font-weight: bold;
+}
+
+.header__posts input {
+  font-size: inherit;
+  width: 20rem;
+  padding: 1rem 1rem;
+  border: 1px solid #ffe8cc;
+  outline: none;
+}
+
+*::placeholder {
+  color: #999;
+}
+
+.btn {
+  /* width: 1.5rem; */
+  font-size: inherit;
+  padding: 1rem 2rem;
+  color: #000;
+  background-color: #ffa94d;
+  border: 1px solid #ffa94d;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* FORM */
+.form-container {
+  margin-top: 3rem;
+  background-color: #fff4e6;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 2rem 0;
+}
+
+.form-container input {
+  font-size: inherit;
+  width: 20rem;
+  padding: 1.5rem;
+  border: 1px solid #ffe8cc;
+  outline: none;
+}
+
+.form-container textarea {
+  font-size: inherit;
+  padding: 1.5rem 1.5rem;
+  border: 1px solid #ffe8cc;
+  outline: none;
+}
+
+.form-container .add-btn {
+  padding: 1.5rem 2rem;
+}
+
+input:focus,
+textarea:focus {
+  outline: 1px solid #ffa94d;
 }
